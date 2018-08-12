@@ -21,3 +21,7 @@
 .project-item2 {
   flex-basis: 15rem;
 }
+
+.project-item2 img{
+  max-height: 8rem;
+}
