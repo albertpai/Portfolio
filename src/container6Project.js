@@ -1,0 +1,20 @@
+import React from 'react';
+import './container6Project.css';
+import kodflix from './img/kodflix.png';
+import alpha from './img/alpha.svg';
+
+export default class ContainerProject extends React.Component {
+    render() {
+        return (
+            <div className="container-project">
+                <h1 className="project-item1">Projects</h1>
+                <div className="project-item2">
+                        <a href="https://github.com/albertpai/Kodflix" target="_blank"><img src={kodflix} alt=""/></a>
+                </div>
+                <div className="project-item2">
+                        <a href="https://github.com/albertpai/alpha-app" target="_blank"><img src={alpha} alt=""/></a>
+                </div>
+            </div>
+        )
+    }
+}
