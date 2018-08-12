@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import ContainerHeader from './container1Header.js';
 import ContainerBio from './container2Bio.js';
-import ContainerWeb from './container3Web.js';
-import ContainerIT from './container4IT.js';
-import ContainerMore from './container5More.js';
-import ContainerProject from './container6Project.js';
+import ContainerProject from './container3Project.js';
+import ContainerWeb from './container4Web.js';
+import ContainerIT from './container5IT.js';
+import ContainerMore from './container6More.js';
 import ContainerContact from './container7Contact.js';
 
 export default class App extends Component {
@@ -14,10 +14,10 @@ export default class App extends Component {
       <div className="App">
         <ContainerHeader />
         <ContainerBio />
+        <ContainerProject />
         <ContainerWeb />
         <ContainerIT />
         <ContainerMore />
-        <ContainerProject />
         <ContainerContact />
       </div>
     )
