@@ -1,0 +1,35 @@
+.container-web{
+  background-color: #8BA545;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  min-height:20rem;
+  padding: 2rem;
+}
+
+.container-web h1{
+  font-family: Lateef;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin:0;
+}
+
+.web-item1{
+  flex-basis: 100%;
+  padding: 1rem;
+}
+
+.web-item2{
+  flex-basis: 20rem;
+  padding: 0;
+}
+
+.icon-skill{
+  font-size: 8rem;
+}
+
+.container-web p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
