@@ -1,9 +1,8 @@
 .container-bio{
   background-color: #CCD6B2;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
   min-height:30rem;
   padding: 2rem;
 }
@@ -26,11 +25,14 @@
   flex: 1;
 }
 
-.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
 .bio-item2{
   flex: 1;
 }
+
+.avatar {
+  width: 20rem;
+  margin: 2rem;
+  border-radius: 50%;
+  float: left;
+}
+
