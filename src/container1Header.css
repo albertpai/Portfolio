@@ -1,4 +1,4 @@
-.container-head {
+.container-header {
   background-image: url("./img/web.jpg");
   background-size: cover;
   opacity: 0.9;
@@ -8,22 +8,31 @@
   min-height:50rem;
 }
 
-.App-header {
-  background: rgba(0, 0, 0, 0.5);
-  width:100%;
+.header-text {
+  background: rgba(0, 0, 0, 0.7);
+  width: 60%;
   height: 20rem;
   padding: 1rem;
   color: white;
+  border-radius: 1rem;
 }
 
-.App-title {
+.Title {
   font-size: 6rem;
-  font-family: Tangerine;
+  font-family: Lateef;
   text-shadow: 2px 2px grey;
+  height: 6rem;
+  margin: 0.5rem;
+  padding: 0;
+  text-align: center;  
+}
+
+.Subtitle {
+  font-size: 1.2rem;
   text-align: center;
-  height: 3rem;
-  margin: 0;
-  padding: 4rem;
+  line-height: 2rem;
+  position:relative;
+  bottom: -1rem;
 }
 
 .button {
@@ -37,9 +46,9 @@
   text-decoration: none;
   font-weight: lighter;
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   position:relative;
-  bottom: -2.5rem;
+  bottom: -1.5rem;
 }
 
 .button:hover {
