@@ -1,6 +1,6 @@
 # Portfolio
-This is my portfolio website. It includes these contents:
-- Bio
-- Tech interests and skills
-- Attitude & motivations
+The is my develper's portfolio, which includes the following contents:
+- Bio (Showing motivations and attitude)
+- Tech skills
+- More skills
 - Hobbies
