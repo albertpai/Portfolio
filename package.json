@@ -1,10 +1,11 @@
 {
-  "name": "website",
+  "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "8.11.1"
+  },
   "private": true,
-  "homepage": "https://albertpai.github.io/portfolio",
   "dependencies": {
-    "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-app-rewire-less": "^2.1.2",
     "react-app-rewired": "^1.5.2",
@@ -15,8 +16,6 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-app-rewired eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+    "eject": "react-app-rewired eject"
+  }
 }
