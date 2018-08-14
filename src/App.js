@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.less';
 import ContainerHeader from './container1Header.js';
 import ContainerBio from './container2Bio.js';
 import ContainerProject from './container3Project.js';
