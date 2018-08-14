@@ -9,10 +9,10 @@ export default class ContainerProject extends React.Component {
             <div className="container-project">
                 <h1 className="project-item1">Current Projects</h1>
                 <div className="project-item2">
-                        <a href="https://github.com/albertpai/Kodflix" target="_blank"><img src={kodflix} alt=""/></a>
+                    <a href="https://github.com/albertpai/Kodflix" target="_blank" rel="noopener noreferrer"><img src={kodflix} alt="" /></a>
                 </div>
                 <div className="project-item2">
-                        <a href="https://github.com/albertpai/alpha-app" target="_blank"><img src={alpha} alt=""/></a>
+                    <a href="https://github.com/albertpai/alpha-app" target="_blank" rel="noopener noreferrer"><img src={alpha} alt="" /></a>
                 </div>
             </div>
         )
