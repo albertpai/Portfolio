@@ -17,7 +17,7 @@
   border-radius: 1rem;
 }
 
-.Title {
+.title {
   font-size: 6rem;
   font-family: Lateef;
   text-shadow: 2px 2px grey;
@@ -27,7 +27,7 @@
   text-align: center;  
 }
 
-.Subtitle {
+.subtitle {
   font-size: 1.2rem;
   text-align: center;
   line-height: 2rem;
