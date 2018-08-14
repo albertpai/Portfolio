@@ -1,7 +1,7 @@
 import React from 'react';
-import './container3Project.css';
-import kodflix from './img/kodflix.png';
-import alpha from './img/alpha.svg';
+import './container3Project.less';
+import kodflix from '../img/kodflix.png';
+import alpha from '../img/alpha.svg';
 
 export default class ContainerProject extends React.Component {
     render() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import './container2Bio.css';
-import Portrait from './img/portrait.jpg';
+import './container2Bio.less';
+import Portrait from '../img/portrait.jpg';
 
 export default class ContainerBio extends React.Component {
     render() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './container1Header.css';
+import './container1Header.less';
 
 export default class ContainerHeader extends React.Component {
     render() {
