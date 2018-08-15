@@ -1,5 +1,5 @@
 import React from 'react';
-import './container7Contact.less';
+import './container7Contact.css';
 
 export default class ContainerContact extends React.Component {
     render() {

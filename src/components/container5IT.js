@@ -1,5 +1,5 @@
 import React from 'react';
-import './container5IT.less';
+import './container5IT.css';
 
 export default class ContainerIT extends React.Component {
     render() {

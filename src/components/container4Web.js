@@ -1,5 +1,5 @@
 import React from 'react';
-import './container4Web.less';
+import './container4Web.css';
 
 export default class ContainerWeb extends React.Component {
     render() {
