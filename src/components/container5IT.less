@@ -2,11 +2,14 @@
   background-color: #656B56;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   min-height:20rem;
   padding: 2rem;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    padding: 6vw;
+    justify-content: space-evenly;
+  }
 }
 
 .container-it h1{
@@ -14,6 +17,9 @@
   font-size: 4rem;
   font-weight: lighter;
   margin:0;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    font-size: 14vw;
+  }
 }
 
 .it-item1{
@@ -34,4 +40,7 @@
 /* Icons */
 .icon-skill-2{
   font-size: 8rem;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    font-size: 25vw;
+  }
 }

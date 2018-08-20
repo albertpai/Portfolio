@@ -1,5 +1,5 @@
 import React from 'react';
-import './container3Project.css';
+import './container3Project.less';
 import kodflix from '../img/kodflix.png';
 import alpha from '../img/alpha.svg';
 

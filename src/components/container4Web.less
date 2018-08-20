@@ -6,6 +6,10 @@
   justify-content: flex-start;
   min-height:20rem;
   padding: 2rem;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    padding: 6vw;
+    justify-content: space-evenly;
+  }
 }
 
 .container-web h1{
@@ -13,6 +17,10 @@
   font-size: 3.7rem;
   font-weight: lighter;
   margin:0;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    font-size:12vw;
+    padding: 0;
+  }
 }
 
 .web-item1{
@@ -23,10 +31,16 @@
 .web-item2{
   flex-basis: 20rem;
   padding: 0;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    flex-basis: 0;
+  }
 }
 
 .icon-skill{
   font-size: 8rem;
+  @media all and (max-width: 350px) and (min-width: 1px)  {
+    font-size: 25vw;
+  }
 }
 
 .container-web p {

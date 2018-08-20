@@ -1,5 +1,5 @@
 import React from 'react';
-import './container6More.css';
+import './container6More.less';
 
 export default class ContainerMore extends React.Component {
     render() {
