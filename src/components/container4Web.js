@@ -5,7 +5,7 @@ export default class ContainerWeb extends React.Component {
     render() {
         return (
             <div className="container-web">
-                <h1 className="web-item1">Full-Stack Web Development Skills</h1>
+                <h1 className="web-item1">Web Development Skills</h1>
                 <div className="web-item2">
                     <i className="devicon-javascript-plain colored icon-skill"></i>
                     <p>JavaScript</p>
