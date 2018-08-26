@@ -1,13 +1,15 @@
+@import './share.less';
+
 .container-more{
   background-color: #EBEBEB;
   display: flex;
   min-height:32rem;
   padding: 2rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    flex-direction: column;
-    padding: 3vw;
-    min-height:100vh;
-  }
+    @media all and (max-width: 640px) and (min-width: 1px)  {
+      flex-direction: column;
+      padding: 3vw;
+      min-height:100vh;
+    }
 }
 
 .container-more h1{
@@ -15,27 +17,49 @@
   font-size: 4rem;
   font-weight: lighter;
   margin:0;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 14vw;
-  }
+    @media @for-phone-only {
+      font-size: 2.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 4rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+    @media @for-desktop-up {
+      font-size: 6rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 12rem;
+    }
 }
 
 .container-more p{
   font-size:1.5rem;
   text-align: left;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 6vw;
-  }
+    @media @for-phone-only {
+      font-size: 1rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 1.8rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 1.8rem;
+    }
+    @media @for-desktop-up {
+      font-size: 2rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 4.5rem;
+    }
 }
 
 .more-item1{
   flex: 1;
-  flex-basis: 50%;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 .more-item2{
   flex: 1;
-  flex-basis: 50%;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }

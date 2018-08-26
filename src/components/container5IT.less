@@ -1,16 +1,34 @@
+@import './share.less';
+
 .container-it{
   background-color: #656B56;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  min-height:20rem;
+  min-height:80vh;
   padding: 2rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    padding: 3vw;
-    justify-content: space-evenly;
-    min-height:100vh;
-  }
+    @media @for-phone-only {
+      padding: 3vw;
+      justify-content: space-evenly;
+    }
+    @media @for-tablet-portrait-up {
+      padding: 3vw;
+      justify-content: space-evenly;
+    }
+    @media @for-tablet-landscape-up {
+      padding: 3vw;
+      justify-content: flex-start;
+    }
+    @media @for-desktop-up {
+      padding: 3vw;
+      justify-content: flex-start;
+    }
+    @media @for-big-desktop-up {
+      padding: 3vw;
+      justify-content: flex-start;
+      min-height: 65vh;
+    }
 }
 
 .container-it h1{
@@ -18,9 +36,21 @@
   font-size: 4rem;
   font-weight: lighter;
   margin:0;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 14vw;
-  }
+    @media @for-phone-only {
+      font-size: 2.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 4rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+    @media @for-desktop-up {
+      font-size: 6rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 12rem;
+    }
 }
 
 .it-item1{
@@ -29,22 +59,63 @@
 }
 
 .it-item2{
-  flex-basis:20rem;
+  flex-basis:17.5rem;
   padding: 0rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    flex-basis: 0;
-  }
+    @media @for-phone-only {
+      flex-basis: 24vw
+    }
+    @media @for-tablet-portrait-up {
+      flex-basis: 18vw
+    }
+    @media @for-tablet-landscape-up {
+      flex-basis: 22vw
+    }
+    @media @for-desktop-up {
+      flex-basis: 22vw
+    }
+    @media @for-big-desktop-up {
+      flex-basis: 10vw
+    }
+}
+
+
+/* Icons */
+.icon-skill-2{
+  font-size: 8rem;
+    @media @for-phone-only {
+      font-size: 20vw;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 17vw;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 14vw;
+    }
+    @media @for-desktop-up {
+      font-size: 14vw;
+    }
+    @media @for-big-desktop-up {
+      font-size: 10vw;
+      padding: 3rem;
+    }
 }
 
 .container-it p {
   font-size: 1.2rem;
   font-weight: lighter;
-}
-
-/* Icons */
-.icon-skill-2{
-  font-size: 8rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 25vw;
-  }
+    @media @for-phone-only {
+      font-size: 3vh;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 3vh;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 3vh;
+    }
+    @media @for-desktop-up {
+      font-size: 3vh;
+    }
+    @media @for-big-desktop-up {
+      font-size: 4vh;
+    }
 }

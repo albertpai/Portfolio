@@ -1,22 +1,47 @@
+@import './share.less';
+
 .container-project {
   background-color: #8BA545;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  min-height:20rem;
-  padding: 2rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    min-height:100vh;
-  }
+  padding: 1rem;
+    @media @for-phone-only {
+      min-height: 60vh;
+    }
+    @media @for-tablet-portrait-up {
+      min-height: 80vh;
+    }
+    @media @for-tablet-landscape-up {
+      min-height: 60vh;
+    }
+    @media @for-desktop-up {
+      min-height: 80vh;
+    }
+    @media @for-big-desktop-up {
+      min-height: 60vh;
+    }
 }
 
 .container-project h1{
   font-family: Lateef;
-  font-size: 4rem;
   font-weight: lighter;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 14vw;
-  }
+  padding: 2rem 0;
+    @media @for-phone-only {
+      font-size: 2.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 4rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+    @media @for-desktop-up {
+      font-size: 6rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 12rem;
+    }
 }
 
 .project-item1 {
@@ -29,8 +54,19 @@
 }
 
 .project-item2 img{
-  max-height: 8rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    width: 90%;
+  @media @for-phone-only {
+    height: 15vh;
+  }
+  @media @for-tablet-portrait-up {
+    height: 18vh;
+  }
+  @media @for-tablet-landscape-up {
+    height: 16vh;
+  }
+  @media @for-desktop-up {
+    height: 16vh;
+  }
+  @media @for-big-desktop-up {
+    height: 17vh;
   }
 }

@@ -1,3 +1,6 @@
+@import './share.less';
+
+
 .container-web{
   background-color: #EBEBEB;
   display: flex;
@@ -5,22 +8,50 @@
   align-items: center;
   justify-content: flex-start;
   min-height:20rem;
-  padding: 2rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    padding: 3vw;
-    justify-content: space-evenly;
-    min-height: 100vh;
-  }
+  padding: 1rem;
+    @media @for-phone-only {
+      justify-content: space-evenly;
+      min-height: 100vh;
+      padding: 0.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      justify-content: space-evenly;
+      min-height: 100vh;
+    }
+    @media @for-tablet-landscape-up {
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    @media @for-desktop-up {
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    @media @for-big-desktop-up {
+      justify-content: flex-start;
+      min-height: 65vh;
+    }
 }
 
 .container-web h1{
   font-family: Lateef;
-  font-size: 3.7rem;
   font-weight: lighter;
   margin:0;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size:12vw;
-  }
+  padding: 2rem 0;
+    @media @for-phone-only {
+      font-size: 2.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 4rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+    @media @for-desktop-up {
+      font-size: 6rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 12rem;
+    }
 }
 
 .web-item1{
@@ -29,21 +60,61 @@
 }
 
 .web-item2{
-  flex-basis: 20rem;
-  padding: 0;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    flex-basis: 0;
-  }
+  flex-basis: 17.5rem;
+  padding: 0;  
+    @media @for-phone-only {
+      flex-basis: 24vw;
+    }
+    @media @for-tablet-portrait-up {
+      flex-basis: 20vw;
+      padding: 1vw;
+    }
+    @media @for-tablet-landscape-up {
+      flex-basis: 22vw;
+    }
+    @media @for-desktop-up {
+      flex-basis: 22vw;
+    }
+    @media @for-big-desktop-up {
+      flex-basis: 10vw;
+    }
 }
 
 .icon-skill{
   font-size: 8rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 25vw;
-  }
+    @media @for-phone-only {
+      font-size: 20vw;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 17vw;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 14vw;
+    }
+    @media @for-desktop-up {
+      font-size: 14vw;
+    }
+    @media @for-big-desktop-up {
+      font-size: 10vw;
+      padding: 3rem;
+    }
 }
 
 .container-web p {
-  font-size: 1.2rem;
   font-weight: lighter;
+    @media @for-phone-only {
+      font-size: 3vh;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 3vh;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 3vh;
+    }
+    @media @for-desktop-up {
+      font-size: 3vh;
+    }
+    @media @for-big-desktop-up {
+      font-size: 4vh;
+    }
 }

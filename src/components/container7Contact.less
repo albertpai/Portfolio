@@ -1,3 +1,5 @@
+@import './share.less';
+
 .container-contact{
   background-color: #A55F45;
   display: flex;
@@ -6,16 +8,28 @@
   align-items: center;
   justify-content: center;
   min-height:10rem;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .container-contact h1{
   font-family: Lateef;
   font-size: 4rem;
   font-weight: lighter;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 14vw;
-  }
+    @media @for-phone-only {
+      font-size: 2.5rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: 4rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+    @media @for-desktop-up {
+      font-size: 6rem;
+    }
+    @media @for-big-desktop-up {
+      font-size: 12rem;
+    }
 }
 
 .contact-item1 {
@@ -24,9 +38,23 @@
 }
 
 .icon-media {
-  font-size:2rem;
   color: #082B00;
   margin-right: 1rem;
+    @media @for-phone-only {
+      font-size:1.2rem;
+    }
+    @media @for-tablet-portrait-up {
+      font-size:2rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size:2.5rem;
+    }
+    @media @for-desktop-up {
+      font-size:3rem;
+    }
+    @media @for-big-desktop-up {
+      font-size:6rem;
+    }
 }
 
 .icon-media:hover {
@@ -35,9 +63,9 @@
 
 h2 {
   font-size: 1.5rem;
-  @media all and (max-width: 640px) and (min-width: 1px)  {
-    font-size: 5vw;
-  }
+    @media all and (max-width: 640px) and (min-width: 1px)  {
+      font-size: 5vw;
+    }
 }
 
 #email{
