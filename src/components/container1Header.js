@@ -6,18 +6,20 @@ export default class ContainerHeader extends React.Component {
         return (
             <div>
                 <header className="container-header">
-                    <div className="header-text">
-                        <h1 className="title">
-                        Albert Pai
+                    <div className="header-box">
+                        <h1 className="flex-item-title">
+                            Albert Pai
                         </h1>
-                        <h3 className="subtitle">
-                        A web developer who always stands in your shoes
-                        <br/>
-                        Enquires at verdant.light@gmail.com
+                        <h3 className="flex-item-subtitle">
+                            A web developer who always stands in your shoes
+                            <br />
+                            Enquires at verdant.light@gmail.com
                         </h3>
-                        <a href="mailto:verdant.light@gmail.com?subject=Web Development Enquiry" target="_blank" rel="noopener noreferrer">
-                        <button className="button">Email Me</button>
-                        </a>
+                        <div className="flex-item-button">
+                            <a href="mailto:verdant.light@gmail.com?subject=Web Development Enquiry" target="_blank" rel="noopener noreferrer">
+                                <button className="button">Email Me</button>
+                            </a>
+                        </div>
                     </div>
                 </header>
             </div>
