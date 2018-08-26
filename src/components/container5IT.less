@@ -5,12 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
-  min-height:80vh;
+  min-height: 65vh;
   padding: 2rem;
     @media @for-phone-only {
       padding: 3vw;
-      justify-content: space-evenly;
+      justify-content: flex-start;
     }
     @media @for-tablet-portrait-up {
       padding: 3vw;
@@ -18,16 +17,15 @@
     }
     @media @for-tablet-landscape-up {
       padding: 3vw;
-      justify-content: flex-start;
+      justify-content: space-evenly;
     }
     @media @for-desktop-up {
       padding: 3vw;
-      justify-content: flex-start;
+      justify-content: space-evenly;
     }
     @media @for-big-desktop-up {
       padding: 3vw;
-      justify-content: flex-start;
-      min-height: 65vh;
+      justify-content: space-evenly;
     }
 }
 
@@ -36,21 +34,7 @@
   font-size: 4rem;
   font-weight: lighter;
   margin:0;
-    @media @for-phone-only {
-      font-size: 2.5rem;
-    }
-    @media @for-tablet-portrait-up {
-      font-size: 4rem;
-    }
-    @media @for-tablet-landscape-up {
-      font-size: 5rem;
-    }
-    @media @for-desktop-up {
-      font-size: 6rem;
-    }
-    @media @for-big-desktop-up {
-      font-size: 12rem;
-    }
+  .title-size;
 }
 
 .it-item1{
@@ -59,63 +43,14 @@
 }
 
 .it-item2{
-  flex-basis:17.5rem;
-  padding: 0rem;
-    @media @for-phone-only {
-      flex-basis: 24vw
-    }
-    @media @for-tablet-portrait-up {
-      flex-basis: 18vw
-    }
-    @media @for-tablet-landscape-up {
-      flex-basis: 22vw
-    }
-    @media @for-desktop-up {
-      flex-basis: 22vw
-    }
-    @media @for-big-desktop-up {
-      flex-basis: 10vw
-    }
+  .flex-item-size;
 }
 
 
-/* Icons */
 .icon-skill-2{
-  font-size: 8rem;
-    @media @for-phone-only {
-      font-size: 20vw;
-    }
-    @media @for-tablet-portrait-up {
-      font-size: 17vw;
-    }
-    @media @for-tablet-landscape-up {
-      font-size: 14vw;
-    }
-    @media @for-desktop-up {
-      font-size: 14vw;
-    }
-    @media @for-big-desktop-up {
-      font-size: 10vw;
-      padding: 3rem;
-    }
+  .icon-skill-size;
 }
 
 .container-it p {
-  font-size: 1.2rem;
-  font-weight: lighter;
-    @media @for-phone-only {
-      font-size: 3vh;
-    }
-    @media @for-tablet-portrait-up {
-      font-size: 3vh;
-    }
-    @media @for-tablet-landscape-up {
-      font-size: 3vh;
-    }
-    @media @for-desktop-up {
-      font-size: 3vh;
-    }
-    @media @for-big-desktop-up {
-      font-size: 4vh;
-    }
+  .icon-text-size;
 }

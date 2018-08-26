@@ -3,3 +3,101 @@
 @for-tablet-landscape-up: ~"only screen and (min-width: 900px) and (max-width: 1201px)";
 @for-desktop-up: ~"only screen and (min-width: 1200px) and (max-width: 1799px)";
 @for-big-desktop-up: ~"only screen and (min-width: 1800px)";
+
+.title-size (@size: 0.5rem) {
+    @media @for-phone-only {
+        font-size: @size * 5;
+      }
+      @media @for-tablet-portrait-up {
+        font-size: @size * 6;
+      }
+      @media @for-tablet-landscape-up {
+        font-size: @size * 7;
+      }
+      @media @for-desktop-up {
+        font-size: @size * 8;
+      }
+      @media @for-big-desktop-up {
+        font-size: @size * 24;
+      }
+}
+
+.flex-item-size (@size: 4rem, @thickness: 0.25rem) {
+    @media @for-phone-only {
+        flex-basis: @size;
+        padding: @thickness;
+      }
+      @media @for-tablet-portrait-up {
+        flex-basis: @size + 1.25;
+        padding: @thickness * 2;
+      }
+      @media @for-tablet-landscape-up {
+        flex-basis: @size * 1.5;
+        padding: @thickness * 3;
+      }
+      @media @for-desktop-up {
+        flex-basis: @size * 1.75;
+        padding: @thickness * 4;
+      }
+      @media @for-big-desktop-up {
+        flex-basis: @size * 5.5;
+        padding: @thickness * 14;
+      }
+}
+
+.icon-skill-size (@size: 4rem) {
+    @media @for-phone-only {
+        font-size: @size + 1rem;
+      }
+      @media @for-tablet-portrait-up {
+        font-size: @size + 1rem * 2;
+      }
+      @media @for-tablet-landscape-up {
+        font-size: @size + 1rem * 3;
+      }
+      @media @for-desktop-up {
+        font-size: @size + 1rem * 4;
+      }
+      @media @for-big-desktop-up {
+        font-size: @size + 1rem * 11;
+        padding: 3rem;
+      }
+}
+
+.icon-text-size (@size: 0.8rem) {
+    font-weight: lighter;
+    @media @for-phone-only {
+      font-size: @size;
+    }
+    @media @for-tablet-portrait-up {
+      font-size: @size + 0.2rem;
+    }
+    @media @for-tablet-landscape-up {
+      font-size:  @size + 0.2rem * 2;
+    }
+    @media @for-desktop-up {
+      font-size:  @size + 0.2rem * 3;
+    }
+    @media @for-big-desktop-up {
+      font-size:  @size + 0.2rem * 8;
+    }
+}
+
+.text-font-size () {
+    font-weight: 50;
+    @media @for-phone-only {
+        font-size: 1rem;
+    }
+    @media @for-tablet-portrait-up {
+        font-size: 1.2rem;
+    }
+    @media @for-tablet-landscape-up {
+        font-size: 1.3rem;
+    }
+    @media @for-desktop-up {
+        font-size: 1.4rem;
+    }
+    @media @for-big-desktop-up {
+        font-size: 4rem;
+    }
+}
