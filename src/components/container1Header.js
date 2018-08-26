@@ -11,10 +11,11 @@ export default class ContainerHeader extends React.Component {
                             Albert Pai
                         </h1>
                         <h3 className="flex-item-subtitle">
-                            A web developer who always stands in your shoes
-                            <br />
-                            Enquires at verdant.light@gmail.com
+                            A web developer who always stands in your shoes.
                         </h3>
+                        <h4>
+                            Enquires at verdant.light@gmail.com
+                        </h4>
                         <div className="flex-item-button">
                             <a href="mailto:verdant.light@gmail.com?subject=Web Development Enquiry" target="_blank" rel="noopener noreferrer">
                                 <button className="button">Email Me</button>
