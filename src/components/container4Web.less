@@ -4,8 +4,8 @@
   background-color: #EBEBEB;
   display: flex;
   flex-wrap: wrap;
+  flex-direction:column;
   align-items: center;
-  justify-content: flex-start;
   min-height:20rem;
   .container-padding;
     @media @for-phone-only {
@@ -39,11 +39,19 @@
 }
 
 .web-item1{
-  flex-basis: 100%;
-  padding: 1rem;
+  flex: 1 0;
+  padding: 1.5rem;
 }
 
 .web-item2{
+  flex: 1 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.web-item-icon{
   .flex-item-size;
 }
 
