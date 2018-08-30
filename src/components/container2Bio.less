@@ -15,10 +15,27 @@
 
 .bio-item1 h1 {
   font-family: Tangerine;
-  font-size: 5rem;
   margin: 0;
-  padding: 1rem;  
-  .title-size
+  padding: 1rem;
+  .title-size;  
+}
+
+.title-size (@size: 0.1rem) {
+  @media @for-phone-only {
+    font-size: @size * 26;
+  }
+  @media @for-tablet-portrait-up {
+    font-size: @size * 28;
+  }
+  @media @for-tablet-landscape-up {
+    font-size: @size * 35;
+  }
+  @media @for-desktop-up {
+    font-size: @size * 37;
+  }
+  @media @for-big-desktop-up {
+    font-size: @size * 80;
+  }
 }
 
 .bio-item2{

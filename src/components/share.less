@@ -12,10 +12,10 @@
       font-size: @size * 28;
     }
     @media @for-tablet-landscape-up {
-      font-size: @size * 30;
+      font-size: @size * 35;
     }
     @media @for-desktop-up {
-      font-size: @size * 32;
+      font-size: @size * 37;
     }
     @media @for-big-desktop-up {
       font-size: @size * 120;
@@ -63,26 +63,26 @@
   }
 }
 
-.flex-item-size (@size: 4rem, @padding: 0.25rem) {
+.flex-item-size (@size: 2rem, @padding: 0.1rem) {
     @media @for-phone-only {
         flex-basis: @size;
-        padding: @padding;
+        padding: @padding * 3;
     }
     @media @for-tablet-portrait-up {
-      flex-basis: @size + 1.25;
-      padding: @padding * 2;
+      flex-basis: @size * 1.25;
+      padding: @padding * 5;
     }
     @media @for-tablet-landscape-up {
       flex-basis: @size * 1.5;
-      padding: @padding * 3;
+      padding: @padding * 7.5;
     }
     @media @for-desktop-up {
       flex-basis: @size * 1.75;
-      padding: @padding * 4;
+      padding: @padding * 10;
     }
     @media @for-big-desktop-up {
       flex-basis: @size * 5.5;
-      padding: @padding * 14;
+      padding: @padding * 35;
     }
 }
 
