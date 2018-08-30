@@ -22,6 +22,24 @@
     }
 }
 
+.container-padding () {
+  @media @for-phone-only {
+    padding: 3vh 5vw;
+  }
+  @media @for-tablet-portrait-up {
+    padding: 3vh 6vw;
+  }
+  @media @for-tablet-landscape-up {
+    padding: 3vh 7vw;
+  }
+  @media @for-desktop-up {
+    padding: 3vh 8vw;
+  }
+  @media @for-big-desktop-up {
+    padding: 3vh 8vw;
+  }
+}
+
 .bio-item2-p-font-size (@size: 0.1rem) {
   @media @for-phone-only {
     font-size: @size * 9;
@@ -49,40 +67,40 @@
     @media @for-phone-only {
         flex-basis: @size;
         padding: @padding;
-      }
-      @media @for-tablet-portrait-up {
-        flex-basis: @size + 1.25;
-        padding: @padding * 2;
-      }
-      @media @for-tablet-landscape-up {
-        flex-basis: @size * 1.5;
-        padding: @padding * 3;
-      }
-      @media @for-desktop-up {
-        flex-basis: @size * 1.75;
-        padding: @padding * 4;
-      }
-      @media @for-big-desktop-up {
-        flex-basis: @size * 5.5;
-        padding: @padding * 14;
-      }
+    }
+    @media @for-tablet-portrait-up {
+      flex-basis: @size + 1.25;
+      padding: @padding * 2;
+    }
+    @media @for-tablet-landscape-up {
+      flex-basis: @size * 1.5;
+      padding: @padding * 3;
+    }
+    @media @for-desktop-up {
+      flex-basis: @size * 1.75;
+      padding: @padding * 4;
+    }
+    @media @for-big-desktop-up {
+      flex-basis: @size * 5.5;
+      padding: @padding * 14;
+    }
 }
 
-.icon-skill-size (@size: 4rem) {
+.icon-skill-size (@size: 1rem) {
     @media @for-phone-only {
-        font-size: @size + 1rem;
+        font-size: @size * 5.5;
       }
       @media @for-tablet-portrait-up {
-        font-size: @size + 1rem * 2;
+        font-size: @size * 6;
       }
       @media @for-tablet-landscape-up {
-        font-size: @size + 1rem * 3;
+        font-size: @size * 6.5;
       }
       @media @for-desktop-up {
-        font-size: @size + 1rem * 4;
+        font-size: @size * 7;
       }
       @media @for-big-desktop-up {
-        font-size: @size + 1rem * 11;
+        font-size: @size * 15;
         padding: 3rem;
       }
 }
