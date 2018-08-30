@@ -24,7 +24,7 @@ export default class ContainerWeb extends React.Component {
                         <p>CSS3</p>
                     </div>
                     <div className="web-item-icon">
-                        <i className="devicon-less-plain-wordmark icon-skill"></i>
+                        <i className="devicon-less-plain-wordmark colored icon-skill"></i>
                         <p>LESS</p>
                     </div>
                     <div className="web-item-icon">
