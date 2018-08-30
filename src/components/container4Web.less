@@ -1,6 +1,5 @@
 @import './share.less';
 
-
 .container-web{
   background-color: #EBEBEB;
   display: flex;
@@ -8,22 +7,21 @@
   align-items: center;
   justify-content: flex-start;
   min-height:20rem;
-  padding: 1rem;
+  .container-padding;
     @media @for-phone-only {
       justify-content: space-evenly;
       min-height: 100vh;
-      padding: 0.5rem;
     }
     @media @for-tablet-portrait-up {
       justify-content: space-evenly;
       min-height: 100vh;
     }
     @media @for-tablet-landscape-up {
-      justify-content: flex-start;
+      justify-content: space-evenly;
       min-height: 100vh;
     }
     @media @for-desktop-up {
-      justify-content: flex-start;
+      justify-content: space-evenly;
       min-height: 100vh;
     }
     @media @for-big-desktop-up {
