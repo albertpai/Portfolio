@@ -26,8 +26,8 @@
 
 .flex-item-title {
   font-family: Roboto;
-  font-weight: 100;
-  text-shadow: 3px 3px grey;
+  font-weight: 500;
+  text-shadow: 1.5px 1.5px grey;
   padding: 0.5rem;
   margin:0;
   justify-content: center;
@@ -53,52 +53,83 @@
   font-weight: 50;
   margin: 0;
     @media @for-phone-only {
-      font-size: 0.7rem;
-      line-height: 1.4rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      padding: 0.2rem;
     }
     @media @for-tablet-portrait-up {
       font-size: 1rem;
-      line-height: 1.8rem;
-      padding: 0.8rem;
+      line-height: 1.75rem;
+      padding: 0.5rem;
     }
     @media @for-tablet-landscape-up {
-      font-size: 1.5rem;
-      padding: 0.8rem;
+      font-size: 1.2rem;
       line-height: 2rem;
+      padding: 0.6rem;
     }
     @media @for-desktop-up {
-      font-size: 1.4rem;
-      padding: 0.5rem;
-      line-height: 2.7rem;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      padding: 0.8rem;
     }
     @media @for-big-desktop-up {
       font-size: 3rem;
-      padding: 0.8rem;
       line-height: 3.5rem;
-      top: 4rem;
+      padding: 0.8rem;
     }
 }
 
 h4 {
   margin:0;
   font-weight: 50;
+  @media @for-phone-only {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0.2rem;
+  }
+  @media @for-tablet-portrait-up {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+  }
+  @media @for-tablet-landscape-up {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 0.6rem;
+  }
+  @media @for-desktop-up {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0.8rem;
+  }
+  @media @for-big-desktop-up {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 0.8rem;
+  }
 }
 
 .flex-item-button {
   padding: 0.8rem;
-      @media @for-tablet-landscape-up {
-        padding: 1.5rem;
-      }
-      @media @for-desktop-up {
-        padding: 2rem;
-      }
-      @media @for-big-desktop-up {
-        padding: 2.5rem;
-      }
+    @media @for-phone-only {
+      padding: 0.8rem;
+    }
+    @media @for-tablet-portrait-up {
+      padding: 1rem;
+    }
+    @media @for-tablet-landscape-up {
+      padding: 1.5rem;
+    }
+    @media @for-desktop-up {
+      padding: 1.75rem;
+    }
+    @media @for-big-desktop-up {
+      padding: 2.5rem;
+    }
 }
 
 .button {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-width: 0rem;
   border-color: #656B56;
   border-radius:0.5rem;
@@ -106,7 +137,7 @@ h4 {
   padding: 1rem 1.618rem;
   text-align: center;
   text-decoration: none;
-  font-weight: lighter;
+  font-weight: 500;
     @media @for-phone-only {
       font-size: 0.9rem;
     }
@@ -120,7 +151,7 @@ h4 {
       font-size: 1.5rem;
     }
     @media @for-big-desktop-up {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 }
 

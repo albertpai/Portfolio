@@ -11,7 +11,7 @@ export default class ContainerHeader extends React.Component {
                             Albert Pai
                         </h1>
                         <h3 className="flex-item-subtitle">
-                            A web developer who always stands in your shoes.
+                            A web developer who always stands in your shoes
                         </h3>
                         <h4>
                             Enquires at verdant.light@gmail.com
